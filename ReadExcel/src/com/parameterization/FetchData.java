@@ -15,7 +15,7 @@ public class FetchData
 	{
 FileInputStream fileinputstream = new FileInputStream("C:\\Users\\Lenovo\\Desktop\\ReadExcelData.xlsx");
 		
-		Sheet sh =  WorkbookFactory.create(fileinputstream).getSheet("login");
+		 Sheet sh =  WorkbookFactory.create(fileinputstream).getSheet("login");
 		
 		String uname = sh.getRow(1).getCell(1).getStringCellValue();
 		
